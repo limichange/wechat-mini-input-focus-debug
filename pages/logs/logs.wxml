@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap="setAllInputFocus">触发两个页面的input</button>
+  <button bindtap="setInputFocus">触发当前页面focus</button>
+  <view class="classname" wx:if="{{inputFocus}}">
+    <input focus="true" bindblur="inputBlur" placeholder="input"/>
+  </view>
+</view>

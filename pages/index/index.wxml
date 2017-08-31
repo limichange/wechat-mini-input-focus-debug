@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap="bindViewTap">先进入一个page</button>
+  <button bindtap="setInputFocus">触发当前页面focus</button>
+  <view class="classname" wx:if="{{inputFocus}}">
+    <input focus="true" placeholder="input"/>
+  </view>
+</view>
